@@ -510,33 +510,29 @@ setInterval(()=>{
     playersubhealth = width2 - maxWidth2;
     t++;
     time.innerText = t;
-if(t >= maxTime){ 
+if(t >= 10){
     time.style.paddingLeft = "1%"
 }
 if(t >= maxTime && enemysubhealth == playersubhealth){
     finalText.innerText = "Tie"
-    time.style.paddingLeft = "1%"
     setTimeout(()=>{
         location.reload();
     },timeToReload)
 }
 if(t >= maxTime && enemysubhealth == playersubhealth){
     finalText.innerText = "Tie";
-    time.style.paddingLeft = "1%";
     setTimeout(()=>{
         location.reload();
     },timeToReload)
 }
 if(t >= maxTime && enemysubhealth > playersubhealth){
     finalText.innerText = "Ryu Won";
-    time.style.paddingLeft = "1%";
     setTimeout(()=>{
         location.reload();
     },timeToReload);
 }
 if(t >= maxTime && enemysubhealth < playersubhealth){
     finalText.innerText = "Lee Won";
-    time.style.paddingLeft = "1%";
     setTimeout(()=>{
         location.reload();
     },timeToReload);
